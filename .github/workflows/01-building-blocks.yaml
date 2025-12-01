@@ -2,9 +2,11 @@
 name: Simple Hello Workflow
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
+	
 
 jobs:
   say-hello:
