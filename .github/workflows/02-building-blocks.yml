@@ -8,9 +8,7 @@ on:
         description: 'Message to print'
         required: true
         default: 'Hello from workflow_dispatch!'
-  push:
-    branches:
-      - main
+  
 
 jobs:
   say-hello:
