@@ -2,10 +2,7 @@
 name: Simple Hello Workflow
 
 on:
-  workflow_dispatch:    # Manual trigger
-  push:                 # Trigger on push
-    branches:
-      - main
+  workflow_dispatch:    
 
 jobs:
   say-hello:
