@@ -14,5 +14,5 @@ jobs:
       echo "Ref: ${{github.ref}}"
       echo "SHA: ${{github.sha}}"
    - name: Retrieve Variable
-     run: echo "${{MY_VAR}} "
+     run: echo "${{vars.MY_VAR}} "
   
