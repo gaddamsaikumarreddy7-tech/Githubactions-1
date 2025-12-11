@@ -13,4 +13,6 @@ jobs:
       echo "Event name: ${{github.event_name}} "
       echo "Ref: ${{github.ref}}"
       echo "SHA: ${{github.sha}}"
+   - name: Retrieve Variable
+     run: echo "${{My_VAR}} "
   
