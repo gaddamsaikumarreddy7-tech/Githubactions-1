@@ -12,15 +12,15 @@ jobs:
  echo:
   runs-on: ubuntu-latest
   steps:
-   - name: [debug] Print start-up data
-     if: ${{github.event.inputs.debug == 'true'}}
-     run: |
-       echo "Event name: ${{github.event_name}} "
-       echo "Ref: ${{github.ref}}"
-       echo "SHA: ${{github.sha}}"
-   - name: [debug] Print when triggered from main
-     if: ${{ github.ref == 'refs/heads/main' }}
-     run: |
-        echo "Im triggered from main"
-       
+      - name: [debug] Print start-up data
+        if: ${{github.event.inputs.debug == 'true'}}
+        run: |
+          echo "Event name: ${{github.event_name}} "
+          echo "Ref: ${{github.ref}}"
+          echo "SHA: ${{github.sha}}"
+      - name: [debug] Print when triggered from main
+        if: ${{ github.ref == 'refs/heads/main'}}
+        run: |
+            echo "Im triggered from main"
+          
     
