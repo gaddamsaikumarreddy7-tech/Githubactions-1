@@ -18,7 +18,7 @@ jobs:
           echo "Event name: ${{github.event_name}} "
           echo "Ref: ${{github.ref}}"
           echo "SHA: ${{github.sha}}"
-      - name: [debug] Print when triggered from main
+      - name: "[debug] Print when triggered from main"
         if: ${{ github.ref == 'refs/heads/main'}}
         run: |
             echo "Im triggered from main"
